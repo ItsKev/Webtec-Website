@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Webtec</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Testataufgabe f&uuml;r das Modul Webtec">
+    <meta name="author" content="Kevin Huber">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div style="overflow: auto">
+    <div class="header">
+        <img src="sunset.jpg" alt="A sunset">
+        <img src="moon.jpg" alt="Forest with a lake and the moon in the background">
+        <img src="shore.jpg" alt="Blurred picture, trees at a shore">
+    </div>
+
+    <div class="menu">
+        <div class="menuitem" onclick="changePage('index')">Home</div>
+        <div class="menuitem" onclick="changePage('canvas')">Canvas</div>
+        <div class="menuitem" onclick="changePage('formular')">Formular</div>
+    </div>
+
+    <div class="main">
+        <h1>Formular</h1>
+        <form name="formula" id="formula">
+            <label>Geschlecht: </label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label> <br>
+            <label for="surname">Vorname: </label>
+            <input type="text" name="surname" id="surname"> <br>
+            <label for="name">Nachname: </label>
+            <input type="text" name="name" id="name"> <br>
+            <input type="button" value="Senden" onclick="submitPressed()">
+        </form>
+        <label id="feedback"></label>
+    </div>
+
+</div>
+
+</body>
+</html>

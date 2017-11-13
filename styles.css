@@ -1,0 +1,86 @@
+body {
+    background-color: whitesmoke;
+    font-family: verdana, serif;
+    padding: 1%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.header img {
+    opacity: 0.6;
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.header img:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 1.0;
+    z-index: 2;
+}
+
+.menu {
+    padding: 15px;
+    float: left;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+
+.menuitem {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 7px;
+    position: relative;
+    z-index: 1;
+}
+
+.menuitem:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2;
+}
+
+.main {
+    float: left;
+    text-align: center;
+    width: 70%;
+    margin: 0 2%;
+}
+
+.main p {
+    text-align: justify;
+}
+
+.main form {
+    text-align: center;
+}
+
+.main form label {
+    text-align: left;
+    color: blue;
+}
+
+canvas {
+    background: white;
+    border: 1px solid dimgray;
+    width: 600px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 620px) {
+    .menu, .main, .right, .header {
+        width: 100%;
+    }
+}
