@@ -80,8 +80,19 @@ function submitPressed() {
         var name = document.getElementById("name");
         if (name.value === "") {
             label = "Bitte geben Sie Ihren Nachnamen ein.";
+            somethingNotSet = true;
         } else {
             label += name.value;
+        }
+    }
+
+    if (!somethingNotSet) {
+        var mail = document.getElementById("mail");
+        var match = mail.value.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g);
+        if (match === null || match.length !== 1) {
+            label = "Bitte geben Sie eine gültige E-Mail ein."
+        } else {
+            label = "Ok"
         }
     }
 
