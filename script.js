@@ -91,8 +91,6 @@ function submitPressed() {
         var match = mail.value.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g);
         if (match === null || match.length !== 1) {
             label = "Bitte geben Sie eine gültige E-Mail ein."
-        } else {
-            label = "Ok"
         }
     }
 
